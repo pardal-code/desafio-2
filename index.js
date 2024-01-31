@@ -57,6 +57,3 @@ function getExit(){
         console.log("O Herói tem de saldo de " + exitComparetor + " derrotas" + " está no nível " + exitRank)
     }
 }
-
-
-//Boa noite pessoas, esse é meu segundo código parecido com a estrutura do primeiro. Agora usando agora funções!
