@@ -1,6 +1,6 @@
 ///////////////////////////////////////VARIÁVEIS DE SALDO DE VITÓRIAS E DERROTAS///////////////////////////////////////////////////
-let win = 50
-let loss = 20 
+let win = 0
+let loss = 0
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let exitRank = ""
@@ -40,7 +40,7 @@ function rank(comparetor){
             return exitRank = "Lendário"
             break
 
-        case comparetor => 101:
+        case comparetor >= 101:
             return exitRank = "Imortal"
             break
     }
@@ -50,7 +50,13 @@ function getExit(){
     if (win > loss){
         console.log("O Herói tem de saldo de " + exitComparetor + " vitórias" + " está no nível " + exitRank)
     }
+    else if (win === loss){
+        console.log("O Herói está com o saldo igual de vitorias e derrotas")
+    }
     else{
         console.log("O Herói tem de saldo de " + exitComparetor + " derrotas" + " está no nível " + exitRank)
     }
 }
+
+
+//Boa noite pessoas, esse é meu segundo código parecido com a estrutura do primeiro. Agora usando agora funções!
